@@ -14,6 +14,10 @@ app.use(express.urlencoded({extended: false}))
 // Définition du port de l'application  
 const port = process.env.port || 3000
 
+app.get('/data', (req, res) => {
+  res.send('Hello !!!')
+})
+
 app.use('/', Routeur);
 
 // DÉMARRAGE DE L'APPLICATION
