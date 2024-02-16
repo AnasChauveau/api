@@ -17,5 +17,5 @@ jobs:
       - name: Build Docker image
         run: |
           docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_TOKEN }}
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/api-test-action .
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/api-test-action
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/API .
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/API
